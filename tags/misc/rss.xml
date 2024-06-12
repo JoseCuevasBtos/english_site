@@ -1,0 +1,181 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"  xml:lang="en"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="http://localhost:1315/tags/misc/rss.xml" rel="self" type="application/rss+xml"/>
+
+        
+            <copyright>© José Cuevas</copyright>
+        
+
+        <description>Recent content</description>
+
+        
+            <language>en</language>
+        
+
+        
+            <lastBuildDate>Sat, 06 Apr 2024 00:33:52 -03</lastBuildDate>
+        
+
+        <link>http://localhost:1315/tags/misc/</link>
+
+        
+
+        <title>Misc · Tags · José Cuevas</title>
+
+        
+
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<p>If you are just learning mathematics, some of these sites might be of great help.
+(Naturally, the categories are not divising and will intersect;
+e.g., Milne or Scholze can be considered both geometers as number theorists, depending on your take.)</p>
+<h2 id="number-theory">Number theory</h2>
+<ul>
+<li><a href="https://www.sciencedirect.com/journal/journal-of-number-theory">Journal of Number Theory</a> by Elsevier.</li>
+<li><a href="https://jtnb.centre-mersenne.org/journals/JTNB/">Journal de Théorie des Nombres de Bordeaux</a></li>
+<li><a href="http://alpha.math.uga.edu/~pete/expositions2012.html">Pete L. Clark</a></li>
+<li><a href="https://kconrad.math.uconn.edu/blurbs/">Keith Conrad</a></li>
+<li><a href="https://www.mat.uc.cl/~natalia.garcia/">Natalia García-Fritz</a> and <a href="http://mat.uc.cl/~hector.pasten/">Héctor Pastén</a></li>
+<li><a href="https://webusers.imj-prg.fr/~bruno.kahn/">Bruno Kahn</a></li>
+<li><a href="https://kskedlaya.org/">Kiran S. Kedlaya</a></li>
+<li><a href="https://www.jmilne.org/math/">James S. Milne</a></li>
+<li><a href="http://pazuki.perso.math.cnrs.fr/index.html">Fabien Pazuki</a></li>
+<li><a href="https://people.mpim-bonn.mpg.de/scholze/">Peter Scholze</a></li>
+</ul>
+<h2 id="algebraic-geometry">Algebraic geometry</h2>
+<ul>
+<li><a href="https://stacks.math.columbia.edu/browse"><code>Stacks</code> project</a> &ndash;
+An ongoing open source project to write the most comprehensive text on
+algebraic geometry and, more concretely, on <em>stacks</em>.</li>
+<li><a href="https://stacky.net/wiki/index.php?title=EGA_contents">EGA&rsquo;s Table of Contents</a>
+&ndash; The “article” <em>Éléments de Géométrie Algébrique</em> by A. Grothendieck was and
+is still a fundamental reference for algebraic geometry.
+Currently, all of its contents are spread throughtout the <code>Stacks</code> project,
+but it can be useful to go back to the original source.</li>
+<li><a href="https://www.sciencedirect.com/journal/journal-of-algebra/issues">Journal of Algebra</a> by Elsevier.</li>
+<li><a href="https://dept.math.lsa.umich.edu/~hochster/">Melvin Hochster</a></li>
+<li><a href="http://matematicas.unex.es/~sancho/">Pedro Sancho de Salas</a></li>
+<li><a href="https://pagine.dm.unipi.it/tamas/">Tamás Szamuely</a></li>
+<li><a href="http://math.stanford.edu/~vakil/">Ravi Vakil</a></li>
+<li><a href="https://www.math.ias.edu/Voevodsky/">Vladimir Voedovsky</a></li>
+</ul>
+<h2 id="latex">LaTeX</h2>
+<ul>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management">Bibliographies</a>
+&ndash; Advice: Always prefer <code>BibTeX</code> over the embedded method!</li>
+<li><a href="http://detexify.kirelabs.org/classify.html">Detexify</a>
+&ndash; Find <code>LaTeX</code> symbols by drawing.</li>
+<li><a href="https://github.com/xiaohanyu/awesome-tikz">Everything I ever wanted to know about <code>TikZ</code></a>
+&ndash; A list of resources for learning how to use <code>TikZ</code>, including:
+a <a href="https://texample.net/tikz/examples/all/date/">gallery of examples</a> and
+the <a href="https://tikz.dev/">online manual</a>.</li>
+<li><a href="https://q.uiver.app/"><code>quiver</code></a> &ndash; A web tool for making commutative diagrams.
+More stable and better than <a href="https://tikzcd.yichuanshen.de/">Yichuan Shen&rsquo;s editor</a>.</li>
+</ul>
+<h2 id="misceláneo">Misceláneo</h2>
+<ul>
+<li><a href="https://arxiv.org/">arXiv</a> &ndash; A pre-publications site.
+Personally, I daily check the <a href="https://arxiv.org/list/math.NT/pastweek?show=100">number theory</a>,
+<a href="https://arxiv.org/list/math.AG/pastweek?show=100">algebraic geometry</a> and
+<a href="https://arxiv.org/list/math.AC/pastweek?show=100">commutative algebra</a> boards.</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="http://www.numdam.org/">Numdam</a> &ndash; An open archive of mathematical publications, specially by French mathematicians.</li>
+<li><a href="http://mathoverflow.net/">mathoverflow</a> &ndash; Q&amp;A board on mathematics.
+Warning: this is <strong>not</strong> the place for doing homework!</li>
+<li><a href="https://www.mathgenealogy.org/">Mathematics Genealogy Project</a></li>
+<li><a href="https://mathshistory.st-andrews.ac.uk/Biographies/">MacTutor</a> &ndash; Scientists biographies.</li>
+</ul>
+]]></description>
+                
+
+                <guid  isPermaLink="false" >tag:localhost:1315,2024-04-06:2024-04-06T00:33:52-03:00</guid>
+
+                
+                    <link>http://localhost:1315/links/</link>
+                
+
+                
+                    <pubDate>Sat, 06 Apr 2024 00:33:52 -03</pubDate>
+                
+
+                
+                    <title>Public utility links</title>
+                
+            </item>
+        
+    </channel>
+</rss>
