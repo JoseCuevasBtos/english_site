@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://en.josecuevas.xyz/blog/</loc>
+    <lastmod>2024-07-11T13:09:39-04:00</lastmod>
+  </url><url>
+    <loc>https://en.josecuevas.xyz/tags/review/</loc>
+    <lastmod>2024-07-11T13:06:18-04:00</lastmod>
+  </url><url>
+    <loc>https://en.josecuevas.xyz/blog/abc_review/</loc>
+    <lastmod>2024-07-11T13:06:18-04:00</lastmod>
+  </url><url>
+    <loc>https://en.josecuevas.xyz/tags/seminars/</loc>
+    <lastmod>2024-07-11T13:06:18-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://josecuevas.xyz/tags/seminars/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://en.josecuevas.xyz/tags/seminars/"
+                />
+  </url><url>
+    <loc>https://en.josecuevas.xyz/tags/</loc>
+    <lastmod>2024-07-11T13:06:18-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://josecuevas.xyz/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://fr.josecuevas.xyz/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://en.josecuevas.xyz/tags/"
+                />
+  </url><url>
     <loc>https://en.josecuevas.xyz/notes/</loc>
     <lastmod>2024-04-06T00:30:49-03:00</lastmod>
     <xhtml:link
@@ -56,23 +96,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://en.josecuevas.xyz/categories/"
-                />
-  </url><url>
-    <loc>https://en.josecuevas.xyz/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://josecuevas.xyz/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://fr.josecuevas.xyz/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://en.josecuevas.xyz/tags/"
                 />
   </url>
 </urlset>
