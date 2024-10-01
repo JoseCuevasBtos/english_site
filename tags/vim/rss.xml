@@ -1,0 +1,218 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"  xml:lang="en"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1315/tags/vim/" rel="self" type="text/html"/>
+            
+        
+            
+
+            
+
+            
+                <link href="http://localhost:1315/tags/vim/rss.xml" rel="alternate" type="application/rss+xml"/>
+            
+        
+
+        
+
+        
+            <copyright>© José Cuevas</copyright>
+        
+
+        <description>Recent content</description>
+
+        
+            <language>en</language>
+        
+
+        
+            <lastBuildDate>2024-08-05 21:41:41 -0400 -04</lastBuildDate>
+        
+
+        <link>http://localhost:1315/tags/vim/</link>
+
+        
+
+        <title>Vim · Tags · José Cuevas</title>
+
+        
+
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<p>Vim is a great editor and <code>vimtutor</code> is a great way to begin learning how to
+use it. Occasionally, however, you&rsquo;ll find needing much more specific tools
+that are not often contained in an introductory manual, here are some of my
+favorite less known uses of Vim.</p>
+<h2 id="motions">Motions</h2>
+<p>Maybe you know you can move up/down a paragraph with <code>{</code>/<code>}</code>, but did you know
+you can also move up/down a <em>sentence</em> with <code>(</code>/<code>)</code>?</p>
+<p>Also while not technically motions, here are some other of my favorite commands
+while scrolling a document:</p>
+<ul>
+<li><code>zz</code> center your screen at your line.
+Similarly, <code>zt</code>/<code>zb</code> puts your current line at the <strong>t</strong>op/<strong>b</strong>ottom of your
+screen.</li>
+</ul>
+<h3 id="unfolding-lines">(Un)folding lines</h3>
+<p>Very recently I discovered the wonderfull world of <em>folding</em> in Vim.
+You can select some not-so-important lines with <code>V</code> and now <em>fold</em> them with <code>zf</code>.
+This temporarily hides them, but you can always unfold them (or <strong>o</strong>pen
+them) with <code>zo</code> and <strong>c</strong>lose them again with <code>zc</code>, you can toggle this with <code>za</code>.
+You can fold lines recursively (i.e., making folds inside of folds) and
+open/close them recursively with <code>zO</code>/<code>zC</code>.
+You can <strong>d</strong>elete a fold under the cursor with <code>zd</code> (or <code>zD</code> for recursiveness),
+and undo a fold with <code>zx</code>.</p>
+<p>Since folding can made recursive, each fold has a level (or should it be a
+<em>depth</em>?). You can increase the level globally with <code>zm</code> (to fold <strong>m</strong>ore) and
+decrease it with <code>zr</code> (to <strong>r</strong>educe foldings).
+You can close/open all folds with <code>zM</code>/<code>zR</code>.</p>
+<p>After making all the necessary folds, you may save them with <code>:mkvie[w]</code> and
+reload them with <code>:lo[adview]</code>.
+If you don&rsquo;t want to do this every time you close and open a file, you can turn
+it automatic with the following code on your <code>.vimrc</code>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#66d9ef">autocmd</span> <span style="color:#a6e22e">BufWinLeave</span> *.* <span style="color:#a6e22e">mkview</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">autocmd</span> <span style="color:#a6e22e">BufWinEnter</span> *.* <span style="color:#a6e22e">silent</span> <span style="color:#a6e22e">loadview</span> </span></span></code></pre></div></p>
+<p>Foldings are also quite useful movement-wise.
+You can move up/down to the next fold with <code>zk</code>/<code>zj</code>.
+You can also move <em>inside</em> to the beginning/end of a fold with <code>[z</code>/<code>]z</code>.</p>
+<p>Finally, and this is quite the cherry on top, you can automatize foldings.
+By default Vim uses the <code>foldmethod=manual</code>, but if you write Python files it
+might be better to use <code>:set fdm=indent</code> or if you write C files it might be
+better to use <code>:set fdm=syntax</code>.</p>
+<p>Natively, Vim doesn&rsquo;t include too many smart options for folding LaTeX files,
+but the plugin <a href="https://github.com/lervag/vimtex">vimtex</a> certainly does.
+For instance, to automatically fold both the preface and long multi-line comments you may add the following to your <code>.vimrc</code>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">vimtex_fold_types</span> = {
+</span></span><span style="display:flex;"><span>   \ <span style="color:#e6db74">&#39;preamble&#39;</span> : {<span style="color:#e6db74">&#39;enabled&#39;</span> : <span style="color:#ae81ff">1</span>},
+</span></span><span style="display:flex;"><span>   \ <span style="color:#e6db74">&#39;comments&#39;</span> : {<span style="color:#e6db74">&#39;enabled&#39;</span> : <span style="color:#ae81ff">1</span>}
+</span></span><span style="display:flex;"><span>   \}</span></span></code></pre></div></p>
+<p>You can learn more about folding with <code>:help usr_28</code>.</p>
+<h2 id="multiple-files-at-once">Multiple files at once</h2>
+<p>Most people either use a tiling window manager or a terminal tabbing system,
+but Vim offers one by default (and I do believe it&rsquo;s better!).
+You know you can open horizontal <em>splits</em> by <code>:split &lt;file&gt;</code> and vertical ones
+with <code>:vsplit &lt;file&gt;</code>, but Vim also allows for <em>tabs</em> with <code>:tabnew &lt;file&gt;</code>;
+personally I prefer tabs unless I am editing documents back-to-back.
+You can also open up multiple files with vim from your terminal by running:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>vim -<span style="color:#f92672">[</span>oOp<span style="color:#f92672">]</span> &lt;file1&gt; &lt;file2&gt; &lt;...&gt;</span></span></code></pre></div>
+where the <code>-o</code>/<code>-O</code>/<code>-p</code> flag tells it to open up in splits/vertical
+splits/tabs.</p>
+<p>You can move between splits with <code>&lt;Ctrl-w&gt;[hjkl]</code>, you can make two splits
+(either horizontal or vertical ones) the same size with <code>&lt;C-w&gt;=</code>, and also
+change increase the size of the splits with:</p>
+<ul>
+<li><code>&lt;C-w&gt;+</code>/<code>&lt;C-w&gt;-</code> for horizontal ones (you can use <code>:&lt;NUM&gt;winc [+-]</code> in the
+command line).</li>
+<li><code>&lt;C-w&gt;&gt;</code>/<code>&lt;C-w&gt;&lt;</code> for vertical ones (you can use <code>:&lt;NUM&gt;winc [&gt;&lt;]</code> in the
+command line).</li>
+</ul>
+<p>You can navigate one tab up/down with <code>gt</code>/<code>gT</code>, you can move your current tab
+one space before or after with <code>:+tabm</code>/<code>:-tabm</code>, and also put your current tab
+in the <em>n</em>-th position with <code>:&lt;n&gt;tabm</code> and finally you can save your current
+session with <code>:mks &lt;session&gt;.vim</code>.
+You may then re-enter your session with <code>vim -S &lt;session&gt;.vim</code> and then save
+the current changes with <code>:mks! &lt;session&gt;.vim</code>; I use the following on my
+<code>~/.vimrc</code> to update sessions automatically with <code>ZS</code>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">fu</span> <span style="color:#a6e22e">SessionSave</span>()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">exists</span>(<span style="color:#e6db74">&#34;v:this_session&#34;</span>) == <span style="color:#ae81ff">1</span> &amp;&amp; <span style="color:#e6db74">&#34;v:this_session&#34;</span> != <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">exe</span> <span style="color:#e6db74">&#34;mks!&#34;</span> . <span style="color:#a6e22e">v</span>:<span style="color:#a6e22e">this_session</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">endif</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">endf</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">nnoremap</span> <span style="color:#a6e22e">ZS</span> :<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">SessionSave</span>()&lt;<span style="color:#a6e22e">CR</span>&gt;</span></span></code></pre></div>
+Also, I believe Vim&rsquo;s syntax for comparing files is absolutely astonishing.
+Instead of the usual <code>diff &lt;a&gt; &lt;b&gt;</code> you can use <code>vim -d &lt;a&gt; &lt;b&gt;</code> and navigate
+through both files, you can skip onto the next/previous change with <code>]c</code>/<code>[c</code>.</p>
+<h2 id="some-further-configurations-at-vimrc">Some further configurations at vimrc</h2>
+<p>You may know this already, but vim does allow for configurations specific
+towards certain filetypes.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+]]></description>
+                
+
+                <guid isPermaLink="false">tag:localhost:1315,2024-08-05:/blog/vim/</guid>
+
+                
+                    <link>http://localhost:1315/blog/vim/</link>
+                
+
+                
+                    <pubDate>Mon, 05 Aug 2024 21:41:41 -04</pubDate>
+                
+
+                
+                    <title>Some Vim protips</title>
+                
+            </item>
+        
+    </channel>
+</rss>
