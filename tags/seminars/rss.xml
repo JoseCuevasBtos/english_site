@@ -67,6 +67,14 @@
                 
             
         
+            
+                
+            
+                
+                    <link href="https://fr.josecuevas.xyz/tags/seminars/rss.xml" hreflang="fr" rel="alternate" type="application/rss+xml"/>
+                
+            
+        
 
         
             <copyright>© José Cuevas</copyright>
@@ -169,8 +177,8 @@ is almost as good as $abc$.
 This also has connections with Vojta&rsquo;s conjectures in analogy of Cartan&rsquo;s
 second main theorem in Nevanlinna theory.</li>
 <li>Speaking of effective results, an effective Faltings&rsquo; theorem (or <strong>effective
-Mordell</strong>, if the reader prefers so) also implies the $abc$ conjecture. It can
-be re-stated in terms of an inequality of Faltings heights.</li>
+Mordell</strong>, if the reader prefers so) also implies the $abc$ conjecture. It
+can be re-stated in terms of an inequality of Faltings heights.</li>
 </ol>
 <h2 id="elliptic-curves">Elliptic curves</h2>
 <h3 id="definitions-and-invariants">Definitions and invariants</h3>
@@ -185,8 +193,8 @@ $(x, y) \mapsto (u^2x, u^3y)$, after simplifying by $u^{-6}$ changes $a_i
 \mapsto u^{-i}a_i$.
 We will refer to this $i$ as the <strong>weight</strong> of the coefficient.</p>
 <p><strong>Proposition:</strong>
-If $\char K \nmid 6$, then any elliptic curve $E$ over $K$ may be given in
-short Weierstrass form:
+If $\operatorname{char} K \nmid 6$, then any elliptic curve $E$ over $K$ may be
+given in short Weierstrass form:
 $$ y^2 = x^3 + d_4x + d_6, \qquad d_4, d_6 \in K. $$
 Associated to any equation of this form there is a value called the
 <strong>discriminant</strong>, given as
@@ -206,7 +214,7 @@ Given any elliptic curve $E$ over $K$ and a fixed rational point $o \in E(K)$,
 the set of rational points admit an algebraic group structure $(E(K), +)$ which
 commutes with base change and in which $o$ is the neutral element; that is, the
 operation is locally given by equations in $K$ and given a field extension $L /
-K$, the inclusion map $E(K) \hookto E(L)$ is a group homomorphism.</p>
+K$, the inclusion map $E(K) \hookrightarrow E(L)$ is a group homomorphism.</p>
 </blockquote>
 <p>This gives an elliptic curve structure of an algebraic group.</p>
 <p><strong>Definition:</strong>
@@ -251,8 +259,9 @@ reduction</strong>.</p>
 $\mathcal{E}$ is regular, the points of bad reduction are closed, and thus
 finite. Also at each point of bad reduction, the smooth locus of the fibre is
 open, thus it only has finitely many non-smooth points.
-By removing all of them, we obtain an $\mathcal{O}_K$-model $\mathcal{E}_0$ of $E_K$ which
-is smooth and of finite type, known as the <strong>Néron model</strong> of $E_K$.</p>
+By removing all of them, we obtain an $\mathcal{O}_K$-model $\mathcal{E}_0$ of
+$E_K$ which is smooth and of finite type, known as the <strong>Néron model</strong> of
+$E_K$.</p>
 <p>Now if $\mathcal{E}_0$ is the Néron model of $E_K$ and $\mathfrak{p}$ is a
 point of bad reduction, the fibre will be a disconnected algebraic group, whose
 connected component (not being proper) will be either the multiplicative group
@@ -283,8 +292,8 @@ We say that the equation is <strong>minimal</strong> at $\mathfrak{p}$ if the va
 the discriminant is minimal, in which case we will denote by
 $\nu_{\mathfrak{p}}( \mathfrak{D}_{E/K} )$ its value.
 Looking back at the equation, it determines a $\mathcal{O}_{K,
-\mathfrak{p}}$-model for $E_K$ named the <strong>minimal Weierstrass model</strong> $\mathcal{W}$, which
-is normal and projective.</p>
+\mathfrak{p}}$-model for $E_K$ named the <strong>minimal Weierstrass model</strong>
+$\mathcal{W}$, which is normal and projective.</p>
 <p>If the prime is of good reduction, we may prove that the minimal Weierstrass
 model agrees with $(\mathcal{E}_0)_{\mathfrak{p}}$; otherwise, they can&rsquo;t
 agree since $\mathcal{W}$ is connected and singular; thus, to get a chance we
@@ -310,25 +319,26 @@ $$ \mathfrak{D}_{E/K} := \prod_{\mathfrak{p}} \mathfrak{p}^{
 \nu_{\mathfrak{p}}( \mathfrak{D}_{E/K} ) }. $$
 This sort-of captures all of the bad reduction in simultaneous.
 This invariant can be, virtually, whatever ideal it can. For $\Z$ we may
-associate a single number, but in general, $\mathcal{O}_K$ won&rsquo;t be a P.I.D., and thus
-$\mathfrak{D}_{E/K}$ is just an ideal.
+associate a single number, but in general, $\mathcal{O}_K$ won&rsquo;t be a P.I.D.,
+and thus $\mathfrak{D}_{E/K}$ is just an ideal.
 However, if $\mathfrak{D}_{E/K}$ is principal, then we can actually find a
-single Weierstrass equation which is minimal at all primes of $\mathcal{O}_K$; this is
-known as <strong>minimal equation</strong>.</p>
+single Weierstrass equation which is minimal at all primes of $\mathcal{O}_K$;
+this is known as <strong>minimal equation</strong>. (N.B.: As a matter of fact, the last
+statement is an &ldquo;if and only if&rdquo; by a theorem of Silverman.)</p>
 <p>This is all theoretically interesting, but in practice one needs a method for
 calculating all of these invariants (reduction modulo $p$ and minimal
 discriminant at $p$). Such method comes as <strong>Tate&rsquo;s algorithm</strong>, which is of
 vital importance in a lot of results.</p>
 <h3 id="szpiros-conjecture-and-abc">Szpiro&rsquo;s conjecture and $abc$</h3>
 <p>Another invariant which will be of help is the <strong>exponent of the conductor</strong>
-$f(E_K, p)$ which is $0$ (resp. $1$, $2$) if $p$ is of good (resp.
-multiplicative, additive) reduction; with this we construct the <strong>conductor</strong>
-which is also an integral ideal that &ldquo;measures bad reduction&rdquo;
+$f(E_K, \mathfrak{p})$ which is $0$ (resp. $1$, $2$) if $\mathfrak{p}$ is of
+good (resp.  multiplicative, additive) reduction; with this we construct the
+<strong>conductor</strong> which is also an integral ideal that &ldquo;measures bad reduction&rdquo;
 $$ \mathfrak{N}_{E/K} := \prod_{\mathfrak{p}} \mathfrak{p}^{
-f(E_K, p) }. $$
+f(E_K, \mathfrak{p}) }. $$
 This is actually the <em>tame part of the exponent of the conductor</em> which agrees
-with the actual exponent for $p \nmid 6$; the full definition involves a <em>wild
-part</em>, which is somewhat controlled.
+with the actual exponent for $\mathfrak{p} \nmid 6$; the full definition
+involves a <em>wild part</em>, which is somewhat controlled.
 As a consequence of Ogg&rsquo;s formula we have $\mathfrak{N}_{E/K} \mid
 \mathfrak{D}_{E/K}$.
 In 1983, Lucien Szpiro made the following conjecture:</p>
@@ -366,7 +376,7 @@ the $abc$ conjecture for number fields, and Szpiro&rsquo;s conjecture is quite
 natural in that regards.</p>
 <h2 id="linear-forms-in-logarithms">Linear forms in logarithms</h2>
 <p>Linear forms in logarithms is a method developed inside the branch of
-<em>trascendence theory</em>, dedicated to the study of algebraic/transcendence
+<em>transcendence theory</em>, dedicated to the study of algebraic/transcendence
 numbers.
 A known result in this area was the <em>Lindemann-Weierstrass theorem</em> which says
 that given distinct algebraic numbers $\alpha_1, \dots, \alpha_n$ the
@@ -374,13 +384,14 @@ exponentials $e^{\alpha_1}, \dots, e^{\alpha_n}$ are algebraically independent
 (over $\mathbb{Q}$).
 A proposed improvement was <strong>Hilbert&rsquo;s seventh problem</strong> which says that
 $\alpha^b$ is transcendent whenever $\alpha \notin \{0, 1\}$ is algebraic and
-$b$ is irrational; this was proven independently by Gelfond and Schneider in 1934.</p>
-<p>A restatement is that if $\log\alpha_1$ and $\log\alpha_2$ are linearly independent
-over $\mathbb{Q}$ then they are algebraically independent.
-This formulation may be generalized to $n$ terms, which was proven by Alan
-Baker in 1966, what Baker actually found was that the linear form
-$$ \Lambda = \beta_0 + \beta_1\log\alpha_1 + \cdots + \beta_n\log\alpha_n $$
-has a lower bound in terms of the $\beta_i \in \Z$.</p>
+$b$ is irrational; this was proven independently by Gelfond and Schneider in
+1934.</p>
+<p>A restatement is that if $\log\alpha_1$ and $\log\alpha_2$ are linearly
+independent over $\mathbb{Q}$ then they are algebraically independent.  This
+formulation may be generalized to $n$ terms, which was proven by Alan Baker in
+1966, what Baker actually found was that the linear form $$ \Lambda = \beta_0 +
+\beta_1\log\alpha_1 + \cdots + \beta_n\log\alpha_n $$ has a lower bound in
+terms of the $\beta_i \in \Z$.</p>
 <p>After Baker&rsquo;s works, many people improved Baker&rsquo;s bounds.
 In the 2000&rsquo;s, Matveev obtained the best one up to this date; and in 1986 Yu
 obtained a similar bound for the $p$-adic absolute value of $\Lambda$ above.
@@ -393,7 +404,7 @@ $$ \log c \ll_\varepsilon \operatorname{Rad}(abc)^{\frac{1}{3}+\varepsilon}. $$
 If we suppose that $a &lt; c^{1 - \eta}$ for a fixed $\eta &gt; 0$ (at choice), H.
 Pastén obtained the recent improvement:
 $$ \log c \ll_{\eta, \varepsilon} \operatorname{Rad}(abc)^\varepsilon. $$
-And, as stated in the beginning, the $abc$ conjecture has a ton of
+And, as stated in the beginning, the $abc$ conjecture has tons of
 applications, so approaches to $abc$ also have many corollaries, including:
 Tijdeman&rsquo;s theorem (Catalan&rsquo;s equation has at most finitely many solutions),
 Siegel&rsquo;s theorem on finiteness of integer points in curves of geometric genus
@@ -406,7 +417,7 @@ $S$-unit equations.</p>
 other (or if you prefer, an affine point $x \in \mathbb{A}^1(\mathbb{Q})$) we
 may define its <strong>(logarithmic) height</strong> as
 $$ h(x) = \max\{ |u|, |v| \}, $$
-here $|,|$ denotes the usual archimedian absolute value.
+here $|\,|$ denotes the usual archimedian absolute value.
 In general, by using all of the places in a number field, we may extend the
 definition and obtain Weil&rsquo;s (logarithmic) height for algebraic points in
 $\mathbb{P}^1(\mathbb{Q})$.</p>
@@ -432,7 +443,8 @@ This is known as the <em>moduli height</em> and, in the case of elliptic curves 
 this is equivalent to taking $h(j(E))$, where $j(E)$ denotes the $j$-invariant.
 I want to stretch again the fact that this doesn&rsquo;t work because a single
 elliptic curve $E$ over $K$ may have infinitely many twists (i.e., a
-non-isomorphic $E&rsquo;$ which becomes isomorphic after extending the base field).</p>
+non-isomorphic $E^\prime$ which becomes isomorphic after extending the base
+field).</p>
 <p>So, how to obtain finitude then? Shafarevich&rsquo;s conjecture (already known for
 elliptic curves) predicts that after fixing an abelian variety $A_K$ over $K$,
 it has only finitely many twists of controlled good reduction.
@@ -479,7 +491,7 @@ In 1989, Frey made the following conjecture:</p>
 <p><strong>Frey&rsquo;s height conjecture ($H$):</strong>
 Let $K$ be a number field, then for all elliptic curves $E_K$ over $K$ the
 following inequality holds:
-$$ h_{\rm Fal}(E_K) \ll \deg(\mathfrak{N}_E), $$</p>
+$$ h_{\rm Fal}(E_K) \ll \deg(\mathfrak{N}_E). $$</p>
 </blockquote>
 <p>Now, the definition of the degree makes it comparable to the logarithm of
 $\textbf{N} \mathfrak{N}_E$, and the Faltings height is the logarithm of an
@@ -490,28 +502,30 @@ Frey&rsquo;s height conjecture implies Szpiro&rsquo;s conjecture.</p>
 <h3 id="modularity">Modularity</h3>
 <p>We previously discussed the use of the coarse moduli space $\mathscr{A}_g$ of
 abelian varieties of dimension $g$, but it&rsquo;s necessary a more precise
-description of this object, which may be given by the $j$-invariant.
-Over $\mathbb{C}$, all abelian varieties are, as complex manifolds, of the form
+description of this object, which may be given by the $j$-invariant.</p>
+<p>Over $\mathbb{C}$, all abelian varieties are, as complex manifolds, of the form
 $\mathbb{C}^g/\Lambda$, where $\Lambda \le \mathbb{C}^g$ is a lattice (i.e., a
 discrete $\Z$-submodule of rank $2g$); so, for $g = 1$, the $j$-invariant
 determines a map from lattices in $\mathbb{C}$ to complex numbers.
 Every lattice is homothetic to one of the form $\mathbb{Z} + \tau \mathbb{Z}$,
-where $\tau$ is in the upper half-plane $\mathfrak{h}$, so it determines a
+where $\tau$ is in the upper half-plane $\mathfrak{H}$, so it determines a
 bijection between $\mathbb{C}$ and points of $\operatorname{SL}_2(\mathbb{Z})
-\backslash \mathfrak{h} =: Y(1)$.
-By using $\mathfrak{h}^* := \mathfrak{h} \cup \mathbb{P}^1(\mathbb{Q})$
+\backslash \mathfrak{H} =: Y(1)$.
+By using $\mathfrak{H}^* := \mathfrak{H} \cup \mathbb{P}^1(\mathbb{Q})$
 instead, the quotient $\operatorname{SL}_2(\mathbb{Z}) \backslash
-\mathfrak{h}^* =: X(1)$ is a compact complex manifold, which can be given as a
+\mathfrak{H}^* =: X(1)$ is a compact complex manifold, which can be given as a
 projective smooth curve over $\mathbb{Q}$.
 If one uses a subgroup $\Gamma$ of $\operatorname{SL}_2(\mathbb{Z})$ instead,
 one may define other kinds of <strong>modular curves</strong>, which often are
 compactifications of coarse moduli spaces.
 Among these, a special fuchsian group is the <strong>special modular subgroup of
-level $N$</strong>
-$$ \Gamma(N) = \left\{ \begin{bmatrix}a &amp; b \\ c &amp; d\end{bmatrix} \in
-\operatorname{SL}_2\mathbb{Z} : \begin{bmatrix} a &amp; b \\ c &amp; d
-\end{bmatrix} \equiv \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix} \pmod{N}
-\right\}, $$
+level $N$</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$$ \Gamma_0(N) = \left\{ \begin{bmatrix}a &amp; b \\ c &amp; d\end{bmatrix} \in
+\operatorname{SL}_2\mathbb{Z} : c \equiv 0 \pmod{N} \right\}, $$
 whose modular curve is denoted $X_0(N)$.</p>
 <p>An elliptic curve $E_K$ over a number field $K$ is said to be <strong>modular</strong> if
 there exists an (algebraic) morphism $\phi\colon X_0(N) \to E$ over
@@ -530,7 +544,7 @@ semi-stable outside $S$, it has a modular parametrization $\phi$ such that
 $$ \deg\phi \ll_\epsilon \prod_{\ell\mid N_E} \ell^{d+\epsilon}. $$</p>
 </blockquote>
 <p>As a corollary, Frey&rsquo;s height conjecture follows.</p>
-<h3 id="references">References</h3>
+<h2 id="references">References</h2>
 <p>For the basics on elliptic curves, it was used Silverman&rsquo;s book <em>The arithmetic
 of elliptic curves</em> [Si]; the equivalent geometric definitions for an elliptic
 curve are given in Görtz and Wedhorn&rsquo;s <em>Algebraic Geometry</em> (Vols. I and II).
