@@ -179,7 +179,9 @@ example, <code>50gM</code> moves to the approximate half of the line, while <cod
 the end).</p>
 <h2 id="unfolding-lines">(Un)folding lines</h2>
 <p>Very recently I discovered the wonderfull world of <em>folding</em> in Vim.  You can
-select some not-so-important lines with <code>V</code> and now <em>fold</em> them with <code>zf</code>.
+select some not-so-important lines with <code>V</code> and now <em>fold</em> them with <code>zf</code> (this
+is actually an operator and, as such, you can do things like <code>zfip</code> to fold the
+entire paragraph).
 This temporarily hides them, but you can always unfold them (or <strong>o</strong>pen them)
 with <code>zo</code> and <strong>c</strong>lose them again with <code>zc</code>, you can toggle this with <code>za</code>.
 You can fold lines recursively (i.e., making folds inside of folds) and
