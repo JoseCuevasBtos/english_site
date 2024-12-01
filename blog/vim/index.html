@@ -35,7 +35,7 @@
 
 
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1315&amp;path=livereload" data-no-instant defer></script>
     
 
     
@@ -60,7 +60,7 @@
 <meta content="#0d6efd" name="theme-color">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 
-<meta property="og:url" content="https://en.josecuevas.xyz/blog/vim/">
+<meta property="og:url" content="http://localhost:1315/blog/vim/">
   <meta property="og:site_name" content="José Cuevas">
   <meta property="og:title" content="Some Vim protips">
   <meta property="og:description" content="This are a brief compilation of further uses of Vim, specifically foldings and tabs.">
@@ -155,7 +155,7 @@
     
 
 
-<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.90e8e43521c2ef40c030c3979ea72bfc4a04397b9995dce5eadbe91e9770a96b.css"  integrity="sha256-kOjkNSHC70DAMMOXnqcr/EoEOXuZldzl6tvpHpdwqWs="   referrerpolicy="no-referrer"  rel="stylesheet">
+<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.3cce59baa4c0a377a71878f54d31de5b98388de7f970c7988c276bcf39500c5f.css"  integrity="sha256-PM5ZuqTAo3enGHj1TTHeW5g4jef5cMeYjCdrzzlQDF8="   referrerpolicy="no-referrer"  rel="stylesheet">
 
 
 
@@ -756,7 +756,11 @@ table {
       </ul>
     </li>
     <li><a href="#unfolding-lines">(Un)folding lines</a></li>
-    <li><a href="#multiple-files-at-once">Multiple files at once</a></li>
+    <li><a href="#multiple-files-at-once">Multiple files at once</a>
+      <ul>
+        <li><a href="#synchronized-files">Synchronized files</a></li>
+      </ul>
+    </li>
     <li><a href="#misc">Misc</a>
       <ul>
         <li><a href="#some-further-configurations-at-vimrc">Some further configurations at vimrc</a></li>
@@ -898,6 +902,26 @@ the current changes with <code>:mks! &lt;session&gt;.vim</code>; I use the follo
 Also, I believe Vim&rsquo;s syntax for comparing files is absolutely astonishing.
 Instead of the usual <code>diff &lt;a&gt; &lt;b&gt;</code> you can use <code>vim -d &lt;a&gt; &lt;b&gt;</code> and navigate
 through both files, you can skip onto the next/previous change with <code>]c</code>/<code>[c</code>.</p>
+<h3 id="synchronized-files">Synchronized files<a aria-label="Link to this section" class="paige-header-link" href="#synchronized-files"></a></h3>
+<p>Vim is great for comparing multiple files at once. For instance, if you change a
+file <code>a</code> into a file <code>b</code> you can compare them with <code>vimdiff a b</code>. This
+automatically synchronizes both windows, folds common lines and highlights
+changes between both; you can disable highlighting with <code>:diffoff!</code>.</p>
+<p>There are other contexts in which you might want to synchronize different
+windows (say for instance, you are translating a text) without necessarily
+highlighting changes.
+You can do this by doing vertical splits, and using the command <code>:windo set srb</code>
+(shorthand for <code>scrollbind</code>) and the command <code>:windo set crb</code> (shorthand for
+<code>cursorbind</code>).
+You can open both files in this format with:
+
+
+
+
+
+
+<div class="paige-code"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>vim -O &lt;file1&gt; &lt;file2&gt; -c <span style="color:#e6db74">&#34;windo set srb&#34;</span> -c <span style="color:#e6db74">&#34;windo set crb&#34;</span></span></span></code></pre></div></div>
+</p>
 <h2 id="misc">Misc<a aria-label="Link to this section" class="paige-header-link" href="#misc"></a></h2>
 <p>If there is an integer number under the cursor (including sign), you can
 increase/decrease the number with <code>&lt;C-a&gt;</code>/<code>&lt;C-x&gt;</code>.
@@ -1054,7 +1078,7 @@ You can check the filetype of a certain file in Vim with <code>:set ft?</code>.<
         <div class="mb-3" id="paige-prev-next">
             
                 <p class="mb-0" id="paige-next">
-                    <a class="link-secondary" href="https://en.josecuevas.xyz/blog/abc_review/">Review of the Seminar on the $abc$ conjecture</a> &rsaquo;
+                    <a class="link-secondary" href="http://localhost:1315/blog/abc_review/">Review of the Seminar on the $abc$ conjecture</a> &rsaquo;
                 </p>
             
 

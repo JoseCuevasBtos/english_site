@@ -46,7 +46,7 @@
             
 
             
-                <link href="https://en.josecuevas.xyz/tags/seminars/" rel="self" type="text/html"/>
+                <link href="http://localhost:1315/tags/seminars/" rel="self" type="text/html"/>
             
         
             
@@ -54,7 +54,7 @@
             
 
             
-                <link href="https://en.josecuevas.xyz/tags/seminars/rss.xml" rel="alternate" type="application/rss+xml"/>
+                <link href="http://localhost:1315/tags/seminars/rss.xml" rel="alternate" type="application/rss+xml"/>
             
         
 
@@ -63,7 +63,7 @@
                 
             
                 
-                    <link href="https://josecuevas.xyz/tags/seminars/rss.xml" hreflang="es" rel="alternate" type="application/rss+xml"/>
+                    <link href="http://localhost:1313/tags/seminars/rss.xml" hreflang="es" rel="alternate" type="application/rss+xml"/>
                 
             
         
@@ -71,7 +71,7 @@
                 
             
                 
-                    <link href="https://fr.josecuevas.xyz/tags/seminars/rss.xml" hreflang="fr" rel="alternate" type="application/rss+xml"/>
+                    <link href="http://localhost:1314/tags/seminars/rss.xml" hreflang="fr" rel="alternate" type="application/rss+xml"/>
                 
             
         
@@ -90,7 +90,7 @@
             <lastBuildDate>2024-07-11 13:06:18 -0400 -04</lastBuildDate>
         
 
-        <link>https://en.josecuevas.xyz/tags/seminars/</link>
+        <link>http://localhost:1315/tags/seminars/</link>
 
         
 
@@ -572,10 +572,10 @@ by Schlickewei and Wirsing).</p>
 ]]></description>
                 
 
-                <guid isPermaLink="false">tag:en.josecuevas.xyz,2024-07-11:/blog/abc_review/</guid>
+                <guid isPermaLink="false">tag:localhost:1315,2024-07-11:/blog/abc_review/</guid>
 
                 
-                    <link>https://en.josecuevas.xyz/blog/abc_review/</link>
+                    <link>http://localhost:1315/blog/abc_review/</link>
                 
 
                 

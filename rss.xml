@@ -48,7 +48,7 @@
             
 
             
-                <link href="https://en.josecuevas.xyz/" rel="self" type="text/html"/>
+                <link href="http://localhost:1315/" rel="self" type="text/html"/>
             
         
             
@@ -56,7 +56,7 @@
             
 
             
-                <link href="https://en.josecuevas.xyz/rss.xml" rel="alternate" type="application/rss+xml"/>
+                <link href="http://localhost:1315/rss.xml" rel="alternate" type="application/rss+xml"/>
             
         
 
@@ -65,7 +65,7 @@
                 
             
                 
-                    <link href="https://josecuevas.xyz/rss.xml" hreflang="es" rel="alternate" type="application/rss+xml"/>
+                    <link href="http://localhost:1313/rss.xml" hreflang="es" rel="alternate" type="application/rss+xml"/>
                 
             
         
@@ -73,7 +73,7 @@
                 
             
                 
-                    <link href="https://fr.josecuevas.xyz/rss.xml" hreflang="fr" rel="alternate" type="application/rss+xml"/>
+                    <link href="http://localhost:1314/rss.xml" hreflang="fr" rel="alternate" type="application/rss+xml"/>
                 
             
         
@@ -92,7 +92,7 @@
             <lastBuildDate>2024-10-01 00:00:00 +0000 UTC</lastBuildDate>
         
 
-        <link>https://en.josecuevas.xyz/</link>
+        <link>http://localhost:1315/</link>
 
         
 
@@ -250,6 +250,26 @@ the current changes with <code>:mks! &lt;session&gt;.vim</code>; I use the follo
 Also, I believe Vim&rsquo;s syntax for comparing files is absolutely astonishing.
 Instead of the usual <code>diff &lt;a&gt; &lt;b&gt;</code> you can use <code>vim -d &lt;a&gt; &lt;b&gt;</code> and navigate
 through both files, you can skip onto the next/previous change with <code>]c</code>/<code>[c</code>.</p>
+<h3 id="synchronized-files">Synchronized files</h3>
+<p>Vim is great for comparing multiple files at once. For instance, if you change a
+file <code>a</code> into a file <code>b</code> you can compare them with <code>vimdiff a b</code>. This
+automatically synchronizes both windows, folds common lines and highlights
+changes between both; you can disable highlighting with <code>:diffoff!</code>.</p>
+<p>There are other contexts in which you might want to synchronize different
+windows (say for instance, you are translating a text) without necessarily
+highlighting changes.
+You can do this by doing vertical splits, and using the command <code>:windo set srb</code>
+(shorthand for <code>scrollbind</code>) and the command <code>:windo set crb</code> (shorthand for
+<code>cursorbind</code>).
+You can open both files in this format with:
+
+
+
+
+
+
+<div class="paige-code"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>vim -O &lt;file1&gt; &lt;file2&gt; -c <span style="color:#e6db74">&#34;windo set srb&#34;</span> -c <span style="color:#e6db74">&#34;windo set crb&#34;</span></span></span></code></pre></div></div>
+</p>
 <h2 id="misc">Misc</h2>
 <p>If there is an integer number under the cursor (including sign), you can
 increase/decrease the number with <code>&lt;C-a&gt;</code>/<code>&lt;C-x&gt;</code>.
@@ -324,10 +344,10 @@ You can check the filetype of a certain file in Vim with <code>:set ft?</code>.<
 ]]></description>
                 
 
-                <guid isPermaLink="false">tag:en.josecuevas.xyz,2024-10-01:/blog/vim/</guid>
+                <guid isPermaLink="false">tag:localhost:1315,2024-10-01:/blog/vim/</guid>
 
                 
-                    <link>https://en.josecuevas.xyz/blog/vim/</link>
+                    <link>http://localhost:1315/blog/vim/</link>
                 
 
                 
@@ -812,10 +832,10 @@ by Schlickewei and Wirsing).</p>
 ]]></description>
                 
 
-                <guid isPermaLink="false">tag:en.josecuevas.xyz,2024-07-11:/blog/abc_review/</guid>
+                <guid isPermaLink="false">tag:localhost:1315,2024-07-11:/blog/abc_review/</guid>
 
                 
-                    <link>https://en.josecuevas.xyz/blog/abc_review/</link>
+                    <link>http://localhost:1315/blog/abc_review/</link>
                 
 
                 
